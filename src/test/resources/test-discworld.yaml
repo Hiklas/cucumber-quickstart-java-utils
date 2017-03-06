@@ -1,0 +1,7 @@
+webpage_client:
+  default_client: browser
+  base_url: ankhmorpork:8700
+  selenium:
+    browser: FIREFOX
+  phantom:
+  headless:

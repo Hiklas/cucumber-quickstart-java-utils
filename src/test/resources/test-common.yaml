@@ -1,0 +1,59 @@
+
+json_schema: 'data/json_schema'
+
+# Currently not used >
+proxy_url: '127.0.0.1'
+proxy_port: 28080
+rest_timeout: 60
+# < Currently not used
+
+
+webpage_client:
+  default_client: browser
+  base_url: localhost:8700
+  selenium:
+    browser: firefox
+  phantom:
+  headless:
+
+screens:
+  Search:
+    url: /
+    title: Search
+    check_for_ids: 
+        - input-name
+        - name-label
+        - id-label
+    get_here_by: GET
+
+  User Details:
+    url: /user
+    title: User details
+    check_for_ids:
+    get_here_by: POST
+    form_data:
+        - input-name
+        - wibble
+        - gibber
+        - glop
+        - mimble
+        - wimble
+
+element_ids:
+    Search Form: search-form
+    Name Input: name-input
+    ID Input: id-input
+    User Details Header: user-details-header
+    
+element_groups:
+    Discworld:
+        - Search Form
+        - Name Input
+        - ID Input
+
+messages:
+    not_registered: 'This customer is not yet registered'
+    
+
+    
+    

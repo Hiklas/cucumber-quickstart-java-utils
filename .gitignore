@@ -1,0 +1,14 @@
+.idea/
+.settings/
+target/
+org.eclipse*.prefs
+.DS_Store
+*.classpath
+*.project
+*.iml
+*.log
+*.rpm
+
+
+
+
